@@ -41,13 +41,14 @@ Material:
     m_Floats:
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _RimBrightness: 1
+    - _RimBrightness: 0
     - _RimPower: 2.87
+    - _Tiling: 30
     - _ToonRampOffset: 0.6
     - _ToonRampSmoothness: 0
     m_Colors:
-    - _DiffuseColor: {r: 0, g: 0.3540415, b: 0.6037736, a: 0}
-    - _ToonRampTinting: {r: 0.28898183, g: 0.29216158, b: 0.3207547, a: 0}
+    - _DiffuseColor: {r: 0, g: 0.32611084, b: 1, a: 0}
+    - _ToonRampTinting: {r: 1, g: 1, b: 1, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &2631476691506477646
 MonoBehaviour:

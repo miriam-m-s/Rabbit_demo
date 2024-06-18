@@ -59,9 +59,9 @@ Material:
     - _Smoothness: 0
     - _ToonRampOffset: 0
     - _ToonRampSmoothness: 0
-    - _WindScale: 0.16
-    - _WindSpeed: 1.68
+    - _WindScale: 0.26
+    - _WindSpeed: 0.89
     m_Colors:
     - _Albedo: {r: 1, g: 1, b: 1, a: 0}
-    - _ToonRampTinting: {r: 0, g: 0, b: 0, a: 0}
+    - _ToonRampTinting: {r: 0.60535413, g: 0.5424528, b: 1, a: 0}
   m_BuildTextureStacks: []
