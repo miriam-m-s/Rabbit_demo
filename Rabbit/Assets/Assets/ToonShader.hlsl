@@ -1,3 +1,4 @@
+
 void ToonShading_float(in float3 Normal, in float ToonRampSmoothness, in float3 ClipSpacePos, in float3 WorldPos, in float4 ToonRampTinting,
 in float ToonRampOffset, out float3 ToonRampOutput, out float3 Direction)
 {
@@ -21,16 +22,39 @@ in float ToonRampOffset, out float3 ToonRampOutput, out float3 Direction)
 		#else
 			Light light = GetMainLight();
 		#endif
-
-		// dot product for toonramp
 		half d = dot(Normal, light.direction) * 0.5 + 0.5;
-		
+
 		// toonramp in a smoothstep
-		half toonRamp = smoothstep(ToonRampOffset, ToonRampOffset+ ToonRampSmoothness, d );
+		half toonRamp = smoothstep(ToonRampOffset, ToonRampOffset + ToonRampSmoothness, d);
 		// multiply with shadows;
 		toonRamp *= light.shadowAttenuation;
 		// add in lights and extra tinting
-		ToonRampOutput = light.color * (toonRamp + ToonRampTinting) ;
+		ToonRampOutput = light.color * (toonRamp + ToonRampTinting);
+		// Get additional lights
+		
+		//int additionalLightCount = GetAdditionalLightsCount();
+		//for (int i = 0; i < additionalLightCount; i++) {
+		//	Light additionalLight = GetAdditionalLight(i, WorldPos);
+		//	
+		//	if (additionalLight.distanceAttenuation == 1.0) 
+		//	{
+		//		//other directional light
+		//	}
+		//	else {
+		//		float3 lightDir = normalize(additionalLight.direction );
+		//		// Dot product for toon ramp
+		//		half d = dot(Normal, lightDir) * 0.5 + 0.5;
+		//		// Toon ramp in a smoothstep
+		//		half toonRamp = smoothstep(ToonRampOffset, ToonRampOffset + ToonRampSmoothness, d);
+		//		// Multiply with distance and shadow attenuation
+		//		toonRamp *= additionalLight.distanceAttenuation * light.shadowAttenuation;
+		//		// Return the light contribution
+		//
+		//		ToonRampOutput += additionalLight.color * (toonRamp + ToonRampTinting);
+		//	}
+		//}
+		// dot product for toonramp
+		
 		// output direction for rimlight
 		Direction = light.direction;
 	#endif

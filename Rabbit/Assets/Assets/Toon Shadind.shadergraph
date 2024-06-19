@@ -42,6 +42,9 @@
         },
         {
             "m_Id": "cffa0c7a05ff4a16b8b38d04ce934c80"
+        },
+        {
+            "m_Id": "10d52da55c8444a2b068ccdd29975de3"
         }
     ],
     "m_Nodes": [
@@ -1028,6 +1031,24 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.CategoryData",
+    "m_ObjectId": "10d52da55c8444a2b068ccdd29975de3",
+    "m_Name": "Diffuse",
+    "m_ChildObjectList": [
+        {
+            "m_Id": "5977b634b64444ccb9226b2e6b4ca5d1"
+        },
+        {
+            "m_Id": "e2139049b7804dbf960b634bc94e35b1"
+        },
+        {
+            "m_Id": "40c02a15c1b94ebda58771f2799f6e11"
+        }
+    ]
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.BlockNode",
     "m_ObjectId": "12ae2e8a5b8d42d981b9350725f4bb67",
     "m_Group": {
@@ -1455,19 +1476,10 @@
             "m_Id": "5695cecc3b344a6daea049ed1b7773cd"
         },
         {
-            "m_Id": "5977b634b64444ccb9226b2e6b4ca5d1"
-        },
-        {
             "m_Id": "148ced0e2aaf490cb7e066d0483a6b46"
         },
         {
             "m_Id": "a1aee8c09cd740c296a484da549b7d48"
-        },
-        {
-            "m_Id": "40c02a15c1b94ebda58771f2799f6e11"
-        },
-        {
-            "m_Id": "e2139049b7804dbf960b634bc94e35b1"
         }
     ]
 }
