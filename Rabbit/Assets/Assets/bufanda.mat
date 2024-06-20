@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: toon 1
+  m_Name: bufanda
   m_Shader: {fileID: -6465566751694194690, guid: 10e36714f6f85e64bb87b93f323e8ccc,
     type: 3}
   m_ValidKeywords: []
@@ -22,7 +22,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _Texture2D:
-        m_Texture: {fileID: 2800000, guid: 5e1acf362611957488060eee4178b3f3, type: 3}
+        m_Texture: {fileID: 2800000, guid: 8bb248c8ec2d62d419cd3107c693dbff, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -42,15 +42,15 @@ Material:
     - _Lineart_Thickness: 0.07
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _RimBrightness: 0
-    - _RimPower: 2.87
-    - _Tiling: 30
+    - _RimBrightness: 0.92
+    - _RimPower: 0.94
+    - _Tiling: 1
     - _ToonRampOffset: 0.6
     - _ToonRampSmoothness: 0
     m_Colors:
-    - _DiffuseColor: {r: 0, g: 0.32611084, b: 1, a: 0}
+    - _DiffuseColor: {r: 1, g: 1, b: 1, a: 0}
     - _Lineart_Color: {r: 0, g: 0, b: 0, a: 0}
-    - _ToonRampTinting: {r: 1, g: 1, b: 1, a: 0}
+    - _ToonRampTinting: {r: 0.2625964, g: 0.24230152, b: 0.4245283, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &2631476691506477646
 MonoBehaviour:
